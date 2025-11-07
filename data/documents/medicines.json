@@ -1,0 +1,142 @@
+{
+  "medicines": [
+    {
+      "medicine_name": "Paracetamol",
+      "generic_name": "Acetaminophen",
+      "brand_names": ["Panadol", "Tylenol", "Efferalgan"],
+      "category": "Thuốc giảm đau - hạ sốt",
+      "indications": [
+        "Hạ sốt",
+        "Giảm đau nhẹ đến trung bình",
+        "Đau đầu",
+        "Đau răng",
+        "Đau cơ",
+        "Đau khớp"
+      ],
+      "dosage": {
+        "adult": "500-1000mg mỗi lần, 4-6 giờ/lần, tối đa 4000mg/ngày",
+        "children": "10-15mg/kg cân nặng mỗi lần, 4-6 giờ/lần"
+      },
+      "contraindications": [
+        "Suy gan nặng",
+        "Dị ứng với Paracetamol"
+      ],
+      "side_effects": [
+        "Hiếm gặp: Phát ban da, buồn nôn",
+        "Quá liều: Tổn thương gan nghiêm trọng"
+      ],
+      "warnings": "Không uống quá liều. Tránh uống cùng rượu. Thận trọng với người bệnh gan."
+    },
+    {
+      "medicine_name": "Ibuprofen",
+      "generic_name": "Ibuprofen",
+      "brand_names": ["Brufen", "Advil", "Nurofen"],
+      "category": "Thuốc chống viêm - giảm đau",
+      "indications": [
+        "Giảm đau",
+        "Hạ sốt",
+        "Chống viêm",
+        "Đau đầu",
+        "Đau khớp",
+        "Đau cơ",
+        "Đau bụng kinh"
+      ],
+      "dosage": {
+        "adult": "200-400mg mỗi lần, 4-6 giờ/lần, tối đa 1200mg/ngày (không kê đơn)",
+        "children": "5-10mg/kg cân nặng mỗi lần, 6-8 giờ/lần"
+      },
+      "contraindications": [
+        "Loét dạ dày - tá tràng",
+        "Bệnh thận nặng",
+        "Thai kỳ cuối (sau 28 tuần)"
+      ],
+      "side_effects": [
+        "Đau dạ dày",
+        "Buồn nôn",
+        "Chóng mặt",
+        "Phát ban da"
+      ],
+      "warnings": "Uống sau ăn. Không dùng lâu dài. Thận trọng với người loét dạ dày, bệnh thận."
+    },
+    {
+      "medicine_name": "Omeprazole",
+      "generic_name": "Omeprazole",
+      "brand_names": ["Losec", "Prilosec"],
+      "category": "Thuốc ức chế bơm proton",
+      "indications": [
+        "Loét dạ dày",
+        "Trào ngược dạ dày thực quản",
+        "Ợ nóng",
+        "Đau dạ dày"
+      ],
+      "dosage": {
+        "adult": "20-40mg/ngày, uống trước bữa ăn sáng 30 phút",
+        "children": "Theo chỉ định bác sĩ"
+      },
+      "contraindications": [
+        "Dị ứng với Omeprazole",
+        "Thai kỳ và cho con bú (cần tham khảo bác sĩ)"
+      ],
+      "side_effects": [
+        "Đau đầu",
+        "Tiêu chảy",
+        "Buồn nôn",
+        "Đầy bụng"
+      ],
+      "warnings": "Không dùng quá 14 ngày liên tục không có chỉ định bác sĩ. Có thể che giấu triệu chứng ung thư dạ dày."
+    },
+    {
+      "medicine_name": "Cetirizine",
+      "generic_name": "Cetirizine",
+      "brand_names": ["Zyrtec", "Allerfar"],
+      "category": "Thuốc chống dị ứng",
+      "indications": [
+        "Viêm mũi dị ứng",
+        "Ngứa",
+        "Mày đay",
+        "Chảy nước mũi",
+        "Hắt hơi"
+      ],
+      "dosage": {
+        "adult": "10mg/ngày, uống vào buổi tối",
+        "children_6_12": "5-10mg/ngày"
+      },
+      "contraindications": [
+        "Dị ứng với Cetirizine",
+        "Suy thận nặng"
+      ],
+      "side_effects": [
+        "Buồn ngủ nhẹ",
+        "Khô miệng",
+        "Mệt mỏi"
+      ],
+      "warnings": "Có thể gây buồn ngủ, không lái xe sau khi uống. Tránh uống cùng rượu."
+    },
+    {
+      "medicine_name": "Loperamide",
+      "generic_name": "Loperamide",
+      "brand_names": ["Imodium", "Loperal"],
+      "category": "Thuốc chống tiêu chảy",
+      "indications": [
+        "Tiêu chảy cấp",
+        "Tiêu chảy mạn tính"
+      ],
+      "dosage": {
+        "adult": "4mg lần đầu, sau đó 2mg sau mỗi lần phân lỏng, tối đa 16mg/ngày",
+        "children": "Theo chỉ định bác sĩ"
+      },
+      "contraindications": [
+        "Tiêu chảy xuất huyết",
+        "Tiêu chảy do nhiễm khuẩn",
+        "Viêm đại tràng cấp"
+      ],
+      "side_effects": [
+        "Táo bón",
+        "Chóng mặt",
+        "Buồn nôn",
+        "Đau bụng"
+      ],
+      "warnings": "Chỉ dùng tạm thời. Nếu tiêu chảy kèm sốt cao hoặc phân có máu, cần gặp bác sĩ ngay."
+    }
+  ]
+}

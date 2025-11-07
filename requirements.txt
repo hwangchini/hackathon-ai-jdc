@@ -1,0 +1,40 @@
+# Core dependencies
+python-dotenv
+pydantic
+pydantic-settings
+
+# LangChain core
+langchain
+langchain-community
+langchain-openai
+langchain-core
+
+# Vector store
+chromadb
+langchain-chroma
+
+# Document processing
+pypdf
+python-docx
+docx2txt
+
+# Web scraping for HTML
+beautifulsoup4
+lxml
+
+# Additional utilities
+typing-extensions
+requests
+
+# Web UI
+streamlit
+
+# Unstructured for auto-detection (chỉ cần core)
+unstructured
+python-magic-bin
+
+# LangGraph for workflow orchestration
+langgraph>=0.0.30
+
+# LangChain Tools (already included in langchain core)
+# No additional package needed

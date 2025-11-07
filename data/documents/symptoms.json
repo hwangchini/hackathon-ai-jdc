@@ -1,0 +1,233 @@
+{
+  "symptoms": [
+    {
+      "symptom_name": "Đau đầu",
+      "possible_causes": [
+        "Căng thẳng (stress)",
+        "Mất ngủ hoặc thay đổi giấc ngủ",
+        "Mất nước",
+        "Cảm cúm, cảm lạnh",
+        "Viêm xoang",
+        "Tăng huyết áp",
+        "Migraine (đau nửa đầu)"
+      ],
+      "preliminary_diagnosis": "Đau đầu do căng thẳng là phổ biến nhất. Tuy nhiên, nếu đau đầu dữ dội, kéo dài, hoặc kèm theo các triệu chứng khác như sốt cao, nôn mửa, cứng gáy, cần đi khám ngay.",
+      "treatment_suggestion": "Nghỉ ngơi ở nơi yên tĩnh, uống đủ nước, có thể dùng thuốc giảm đau không kê đơn như Paracetamol. Nếu không đỡ, nên đi khám bác sĩ Nội khoa hoặc Nội thần kinh."
+    },
+    {
+      "symptom_name": "Sốt",
+      "possible_causes": [
+        "Nhiễm virus (cảm cúm, sốt xuất huyết)",
+        "Nhiễm vi khuẩn (viêm họng, viêm phổi)",
+        "Say nắng",
+        "Phản ứng sau tiêm chủng"
+      ],
+      "preliminary_diagnosis": "Sốt là phản ứng của cơ thể chống lại nhiễm trùng. Sốt cao trên 39 độ C, kéo dài trên 3 ngày, hoặc kèm theo phát ban, khó thở cần được bác sĩ đánh giá.",
+      "treatment_suggestion": "Uống nhiều nước, mặc quần áo thoáng mát, lau người bằng nước ấm. Có thể dùng thuốc hạ sốt theo chỉ định. Nên đi khám bác sĩ Nội khoa hoặc Nhi khoa (nếu là trẻ em)."
+    },
+    {
+      "symptom_name": "Ho",
+      "possible_causes": [
+        "Cảm lạnh, cảm cúm",
+        "Viêm họng, viêm phế quản, viêm phổi",
+        "Dị ứng, hen suyễn",
+        "Trào ngược dạ dày thực quản (GERD)"
+      ],
+      "preliminary_diagnosis": "Ho là phản xạ để làm sạch đường thở. Ho khan, ho có đờm, ho kéo dài đều có thể là dấu hiệu của các bệnh lý khác nhau.",
+      "treatment_suggestion": "Uống nhiều nước ấm, mật ong, giữ ấm cổ. Tránh các chất kích thích như khói thuốc. Nếu ho kéo dài, ho ra máu, hoặc khó thở, cần đi khám bác sĩ chuyên khoa Hô hấp."
+    },
+    {
+      "symptom_name": "Đau họng",
+      "possible_causes": [
+        "Viêm họng do virus (phổ biến nhất)",
+        "Viêm họng do vi khuẩn (liên cầu khuẩn)",
+        "Viêm amidan",
+        "La hét hoặc nói quá nhiều"
+      ],
+      "preliminary_diagnosis": "Đau họng thường do nhiễm virus và tự khỏi. Nếu đau họng kèm sốt cao, khó nuốt, hoặc có chấm trắng ở amidan, có thể là do vi khuẩn và cần dùng kháng sinh.",
+      "treatment_suggestion": "Súc miệng nước muối ấm, uống nhiều nước, ngậm viên ngậm trị đau họng. Nên đi khám bác sĩ Tai-Mũi-Họng để xác định nguyên nhân."
+    },
+    {
+      "symptom_name": "Chóng mặt",
+      "possible_causes": [
+        "Huyết áp thấp",
+        "Thiếu máu",
+        "Rối loạn tiền đình",
+        "Mất nước, hạ đường huyết",
+        "Tác dụng phụ của thuốc"
+      ],
+      "preliminary_diagnosis": "Chóng mặt có thể là cảm giác choáng váng hoặc cảm giác mọi thứ quay cuồng. Cần phân biệt để chẩn đoán đúng.",
+      "treatment_suggestion": "Ngồi hoặc nằm xuống ngay khi cảm thấy chóng mặt. Uống nước, ăn nhẹ. Tránh thay đổi tư thế đột ngột. Nên đi khám bác sĩ Nội thần kinh."
+    },
+    {
+      "symptom_name": "Buồn nôn và nôn",
+      "possible_causes": [
+        "Ngộ độc thực phẩm",
+        "Viêm dạ dày ruột (do virus)",
+        "Say tàu xe",
+        "Ốm nghén (ở phụ nữ mang thai)",
+        "Tác dụng phụ của thuốc"
+      ],
+      "preliminary_diagnosis": "Nôn là cơ chế tống các chất độc ra khỏi dạ dày. Nếu nôn liên tục, nôn ra máu, hoặc kèm theo đau bụng dữ dội, cần cấp cứu ngay.",
+      "treatment_suggestion": "Uống từng ngụm nhỏ nước điện giải (oresol). Ăn thức ăn nhẹ, dễ tiêu. Nếu không cải thiện, nên đi khám bác sĩ Tiêu hóa."
+    },
+    {
+      "symptom_name": "Tiêu chảy",
+      "possible_causes": [
+        "Nhiễm khuẩn hoặc virus đường ruột",
+        "Ngộ độc thực phẩm",
+        "Không dung nạp lactose",
+        "Hội chứng ruột kích thích (IBS)"
+      ],
+      "preliminary_diagnosis": "Tiêu chảy cấp thường do nhiễm trùng và tự giới hạn. Tiêu chảy kéo dài trên 2 tuần là mạn tính và cần tìm nguyên nhân.",
+      "treatment_suggestion": "Bù nước và điện giải là quan trọng nhất. Ăn thức ăn dễ tiêu như cháo, chuối. Tránh sữa và đồ ăn nhiều dầu mỡ. Nếu có dấu hiệu mất nước nặng, cần đi khám ngay."
+    },
+    {
+      "symptom_name": "Táo bón",
+      "possible_causes": [
+        "Chế độ ăn ít chất xơ",
+        "Uống không đủ nước",
+        "Ít vận động",
+        "Nhịn đi vệ sinh",
+        "Tác dụng phụ của một số loại thuốc"
+      ],
+      "preliminary_diagnosis": "Táo bón là tình trạng đi tiêu ít hơn 3 lần/tuần và phân cứng, khó đi. Đây là vấn đề phổ biến và thường liên quan đến lối sống.",
+      "treatment_suggestion": "Tăng cường ăn rau xanh, trái cây, ngũ cốc nguyên hạt. Uống đủ 2 lít nước mỗi ngày. Tăng cường vận động. Nếu không cải thiện, có thể dùng thuốc nhuận tràng theo chỉ định của bác sĩ Tiêu hóa."
+    },
+    {
+      "symptom_name": "Đau bụng",
+      "possible_causes": [
+        "Khó tiêu, đầy hơi",
+        "Viêm dạ dày",
+        "Ngộ độc thực phẩm",
+        "Viêm ruột thừa (đau khu trú hố chậu phải)",
+        "Sỏi thận (đau quặn từ lưng xuống)"
+      ],
+      "preliminary_diagnosis": "Vị trí, tính chất và các triệu chứng kèm theo của cơn đau bụng rất quan trọng để chẩn đoán. Đau bụng dữ dội, đột ngột là một dấu hiệu cấp cứu.",
+      "treatment_suggestion": "Nghỉ ngơi, chườm ấm. Nếu đau nhẹ, có thể do khó tiêu. Nếu đau dữ dội, khu trú, hoặc kèm sốt, nôn, cần đi khám cấp cứu ngay lập tức."
+    },
+    {
+      "symptom_name": "Mất ngủ",
+      "possible_causes": [
+        "Căng thẳng, lo âu",
+        "Sử dụng chất kích thích (cà phê, trà) vào buổi tối",
+        "Môi trường ngủ không tốt (ồn ào, quá sáng)",
+        "Lịch sinh hoạt không điều độ"
+      ],
+      "preliminary_diagnosis": "Mất ngủ là tình trạng khó đi vào giấc ngủ, ngủ không sâu, hoặc thức dậy quá sớm. Mất ngủ kéo dài có thể ảnh hưởng nghiêm trọng đến sức khỏe.",
+      "treatment_suggestion": "Tạo thói quen đi ngủ và thức dậy đúng giờ. Giữ phòng ngủ yên tĩnh, tối và mát mẻ. Tránh dùng thiết bị điện tử trước khi ngủ. Nếu tình trạng kéo dài, nên tham khảo ý kiến bác sĩ Tâm thần kinh hoặc chuyên gia Tâm lý."
+    },
+    {
+      "symptom_name": "Phát ban da",
+      "possible_causes": [
+        "Dị ứng (thực phẩm, thuốc, côn trùng)",
+        "Nhiễm virus (sởi, thủy đậu)",
+        "Viêm da tiếp xúc",
+        "Chàm (viêm da cơ địa)"
+      ],
+      "preliminary_diagnosis": "Phát ban có thể có nhiều hình dạng (mẩn đỏ, mụn nước, sẩn...). Hình thái và sự phân bố của ban rất quan trọng cho chẩn đoán.",
+      "treatment_suggestion": "Tránh gãi. Giữ da sạch và khô. Có thể dùng kem dưỡng ẩm làm dịu da. Nên đi khám bác sĩ Da liễu để xác định nguyên nhân và có thuốc điều trị phù hợp."
+    },
+    {
+      "symptom_name": "Đau lưng",
+      "possible_causes": [
+        "Căng cơ, bong gân do vận động sai tư thế",
+        "Thoái hóa cột sống",
+        "Thoát vị đĩa đệm",
+        "Bệnh lý về thận"
+      ],
+      "preliminary_diagnosis": "Đau lưng cấp thường do nguyên nhân cơ học. Đau lưng mạn tính, lan xuống chân, hoặc kèm theo yếu liệt cần được chẩn đoán hình ảnh (X-quang, MRI).",
+      "treatment_suggestion": "Nghỉ ngơi, tránh mang vác nặng. Chườm nóng hoặc lạnh. Tập các bài tập kéo giãn nhẹ nhàng. Nếu đau kéo dài hoặc có dấu hiệu thần kinh, cần đi khám bác sĩ Cơ-Xương-Khớp hoặc Ngoại thần kinh."
+    },
+    {
+      "symptom_name": "Mệt mỏi",
+      "possible_causes": [
+        "Thiếu ngủ",
+        "Làm việc quá sức, căng thẳng",
+        "Thiếu máu, thiếu sắt",
+        "Suy giáp",
+        "Hội chứng mệt mỏi mạn tính"
+      ],
+      "preliminary_diagnosis": "Mệt mỏi là một triệu chứng không đặc hiệu, có thể do nhiều nguyên nhân. Cần loại trừ các nguyên nhân thể chất trước khi nghĩ đến tâm lý.",
+      "treatment_suggestion": "Cải thiện chất lượng giấc ngủ, cân bằng giữa làm việc và nghỉ ngơi. Ăn uống đủ chất. Nếu mệt mỏi kéo dài không rõ nguyên nhân, nên đi khám tổng quát để làm xét nghiệm máu."
+    },
+    {
+      "symptom_name": "Sổ mũi, nghẹt mũi",
+      "possible_causes": [
+        "Cảm lạnh thông thường",
+        "Viêm mũi dị ứng",
+        "Viêm xoang"
+      ],
+      "preliminary_diagnosis": "Sổ mũi, nghẹt mũi là triệu chứng rất phổ biến của các bệnh đường hô hấp trên. Nếu dịch mũi có màu xanh, vàng và kèm đau nhức vùng mặt, có thể là dấu hiệu của viêm xoang.",
+      "treatment_suggestion": "Rửa mũi bằng nước muối sinh lý. Xông hơi. Uống nhiều nước ấm. Có thể dùng thuốc co mạch hoặc kháng histamin theo chỉ định của bác sĩ Tai-Mũi-Họng."
+    },
+    {
+      "symptom_name": "Ợ nóng, trào ngược",
+      "possible_causes": [
+        "Trào ngược dạ dày thực quản (GERD)",
+        "Ăn quá no hoặc ăn đồ cay nóng, nhiều dầu mỡ",
+        "Thừa cân, béo phì",
+        "Hút thuốc lá"
+      ],
+      "preliminary_diagnosis": "Ợ nóng là cảm giác nóng rát ở ngực, sau xương ức, thường xảy ra sau khi ăn. Đây là triệu chứng điển hình của GERD.",
+      "treatment_suggestion": "Tránh ăn quá no, không nằm ngay sau khi ăn. Hạn chế đồ ăn cay nóng, dầu mỡ, cà phê. Nâng cao đầu giường khi ngủ. Nên đi khám bác sĩ Tiêu hóa để được tư vấn và kê đơn thuốc nếu cần."
+    },
+    {
+      "symptom_name": "Đau ngực",
+      "possible_causes": [
+        "Bệnh lý tim mạch (thiếu máu cơ tim, nhồi máu cơ tim) - CẤP CỨU",
+        "Trào ngược dạ dày thực quản",
+        "Căng cơ thành ngực",
+        "Viêm phổi, viêm màng phổi",
+        "Lo âu, hoảng loạn"
+      ],
+      "preliminary_diagnosis": "Đau ngực là một triệu chứng nguy hiểm, không được chủ quan. Đau như bị đè nặng, lan ra tay trái hoặc vai cần được nghĩ đến bệnh tim mạch và gọi cấp cứu ngay.",
+      "treatment_suggestion": "Bất kỳ cơn đau ngực nào cũng cần được bác sĩ đánh giá. Nếu nghi ngờ do tim, cần gọi cấp cứu 115 ngay lập tức. Không tự ý điều trị tại nhà."
+    },
+    {
+      "symptom_name": "Khó thở",
+      "possible_causes": [
+        "Bệnh lý hô hấp (hen suyễn, COPD, viêm phổi)",
+        "Bệnh lý tim mạch (suy tim)",
+        "Dị ứng nặng, sốc phản vệ",
+        "Lo âu, tấn công hoảng loạn"
+      ],
+      "preliminary_diagnosis": "Khó thở là cảm giác không đủ không khí để thở. Đây là một triệu chứng cấp cứu tiềm tàng.",
+      "treatment_suggestion": "Giữ bình tĩnh, ngồi ở tư thế thoải mái, nới lỏng quần áo. Sử dụng thuốc giãn phế quản nếu có sẵn cho bệnh nhân hen. Nếu khó thở đột ngột, dữ dội, hoặc tím tái, cần gọi cấp cứu 115 ngay."
+    },
+    {
+      "symptom_name": "Tiểu buốt, tiểu rắt",
+      "possible_causes": [
+        "Viêm đường tiết niệu (nhiễm trùng bàng quang)",
+        "Viêm niệu đạo",
+        "Sỏi đường tiết niệu",
+        "Bệnh lây truyền qua đường tình dục"
+      ],
+      "preliminary_diagnosis": "Đây là triệu chứng điển hình của nhiễm trùng đường tiết niệu dưới, đặc biệt phổ biến ở nữ giới.",
+      "treatment_suggestion": "Uống thật nhiều nước để làm loãng nước tiểu và loại bỏ vi khuẩn. Tránh nhịn tiểu. Cần đi khám bác sĩ Nội khoa hoặc Thận-Tiết niệu để xét nghiệm nước tiểu và có thể cần dùng kháng sinh."
+    },
+    {
+      "symptom_name": "Mắt đỏ, chảy nước mắt",
+      "possible_causes": [
+        "Viêm kết mạc do virus (đau mắt đỏ)",
+        "Viêm kết mạc do dị ứng",
+        "Khô mắt",
+        "Dị vật trong mắt"
+      ],
+      "preliminary_diagnosis": "Mắt đỏ kèm theo ghèn, cộm, ngứa thường là dấu hiệu của viêm kết mạc. Viêm kết mạc do virus rất dễ lây lan.",
+      "treatment_suggestion": "Không dụi mắt. Rửa tay thường xuyên. Dùng riêng khăn mặt. Nhỏ nước muối sinh lý hoặc nước mắt nhân tạo. Nên đi khám bác sĩ Mắt để được chẩn đoán và điều trị đúng cách, tránh lây lan."
+    },
+    {
+      "symptom_name": "Ù tai",
+      "possible_causes": [
+        "Tiếp xúc với tiếng ồn lớn",
+        "Ráy tai bị tắc",
+        "Viêm tai giữa",
+        "Thoái hóa thính giác do tuổi tác",
+        "Bệnh Meniere"
+      ],
+      "preliminary_diagnosis": "Ù tai là cảm nhận âm thanh (tiếng rít, tiếng vo ve) mà không có nguồn âm thanh bên ngoài. Có thể là tạm thời hoặc mạn tính.",
+      "treatment_suggestion": "Tránh tiếng ồn lớn. Hạn chế căng thẳng và các chất kích thích. Nếu ù tai kéo dài, ảnh hưởng đến sinh hoạt hoặc kèm theo chóng mặt, mất thính lực, cần đi khám bác sĩ Tai-Mũi-Họng."
+    }
+  ]
+}

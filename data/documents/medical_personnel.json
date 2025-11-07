@@ -1,0 +1,121 @@
+{
+  "departments": [
+    {
+      "department_name": "Khoa Tim mạch",
+      "specialty": "Nội khoa",
+      "description": "Chẩn đoán và điều trị các bệnh lý tim mạch",
+      "doctors": [
+        {
+          "full_name": "Nguyễn Văn An",
+          "degree": "Tiến sĩ, Bác sĩ",
+          "position": "Trưởng khoa"
+        },
+        {
+          "full_name": "Trần Thị Bình",
+          "degree": "Thạc sĩ, Bác sĩ",
+          "position": "Phó khoa"
+        },
+        {
+          "full_name": "Hoàng Minh Đức",
+          "degree": "Bác sĩ Chuyên khoa I",
+          "position": "Bác sĩ điều trị"
+        },
+        {
+          "full_name": "Lê Quang Vinh",
+          "degree": "Bác sĩ",
+          "position": "Bác sĩ nội trú"
+        }
+      ]
+    },
+    {
+      "department_name": "Khoa Tiêu hóa",
+      "specialty": "Nội khoa",
+      "description": "Chẩn đoán và điều trị các bệnh lý tiêu hóa",
+      "doctors": [
+        {
+          "full_name": "Lê Văn Cường",
+          "degree": "Bác sĩ Chuyên khoa II",
+          "position": "Bác sĩ Điều trị chính"
+        },
+        {
+          "full_name": "Phạm Thu Hà",
+          "degree": "Thạc sĩ, Bác sĩ",
+          "position": "Bác sĩ điều trị"
+        },
+        {
+          "full_name": "Mai Anh Tuấn",
+          "degree": "Bác sĩ",
+          "position": "Bác sĩ"
+        }
+      ]
+    },
+    {
+      "department_name": "Khoa Nội tiết",
+      "specialty": "Nội khoa",
+      "description": "Chẩn đoán và điều trị các bệnh lý nội tiết",
+      "doctors": [
+        {
+          "full_name": "Vũ Ngọc Mai",
+          "degree": "Tiến sĩ, Bác sĩ",
+          "position": "Bác sĩ chính"
+        },
+        {
+          "full_name": "Đặng Thị Hương",
+          "degree": "Thạc sĩ, Bác sĩ",
+          "position": "Bác sĩ điều trị"
+        }
+      ]
+    },
+    {
+      "department_name": "Khoa Tai-Mũi-Họng",
+      "specialty": "Chuyên khoa lẻ",
+      "description": "Chẩn đoán và điều trị các bệnh lý tai mũi họng",
+      "doctors": [
+        {
+          "full_name": "Hồ Quang Phong",
+          "degree": "Thạc sĩ, Bác sĩ",
+          "position": "Bác sĩ điều trị"
+        },
+        {
+          "full_name": "Nguyễn Thị Thu",
+          "degree": "Bác sĩ",
+          "position": "Bác sĩ tai mũi họng"
+        }
+      ]
+    },
+    {
+      "department_name": "Khoa Mắt",
+      "specialty": "Chuyên khoa lẻ",
+      "description": "Chẩn đoán và điều trị các bệnh lý về mắt",
+      "doctors": [
+        {
+          "full_name": "Vũ Ngọc Lan",
+          "degree": "Bác sĩ Chuyên khoa II",
+          "position": "Bác sĩ chính"
+        },
+        {
+          "full_name": "Hà Tuấn Kiệt",
+          "degree": "Bác sĩ",
+          "position": "Bác sĩ mắt"
+        }
+      ]
+    },
+    {
+      "department_name": "Khoa Da liễu",
+      "specialty": "Chuyên khoa lẻ",
+      "description": "Chẩn đoán và điều trị các bệnh lý về da",
+      "doctors": [
+        {
+          "full_name": "Trần Mỹ Linh",
+          "degree": "Bác sĩ Chuyên khoa I",
+          "position": "Bác sĩ điều trị"
+        },
+        {
+          "full_name": "Lê Thị Bích Trâm",
+          "degree": "Bác sĩ",
+          "position": "Bác sĩ da liễu"
+        }
+      ]
+    }
+  ]
+}
