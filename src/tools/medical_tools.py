@@ -41,6 +41,41 @@ class MedicalTools:
         except Exception as e:
             return f"Lỗi tìm bác sĩ: {str(e)}"
     
+    def _format_medicine_info(self, doc) -> str:
+        """Helper method để format thông tin thuốc bao gồm nguồn"""
+        medicine_name = doc.metadata.get('item_name', 'Thuốc')
+        content = doc.page_content
+        
+        # ✅ Debug: In ra metadata để kiểm tra
+        print(f"🔍 DEBUG [MedicalTools] - Metadata của {medicine_name}:")
+        print(f"  - source: {doc.metadata.get('source', 'MISSING')}")
+        print(f"  - reference_url: {doc.metadata.get('reference_url', 'MISSING')}")
+        print(f"  - last_updated: {doc.metadata.get('last_updated', 'MISSING')}")
+        
+        # Thêm thông tin nguồn nếu có
+        source = doc.metadata.get('source', '')
+        reference_url = doc.metadata.get('reference_url', '')
+        last_updated = doc.metadata.get('last_updated', '')
+        
+        result = f"{content}"
+        
+        # ✅ Thêm section nguồn tham khảo với format nổi bật và dễ parse
+        if source or reference_url or last_updated:
+            result += f"\n\n{'='*60}\n📚 NGUỒN THAM KHẢO (BẮT BUỘC HIỂN THỊ)\n{'='*60}\n"
+            if source:
+                result += f"📖 Nguồn: {source}\n"
+            if reference_url:
+                result += f"🔗 Link tham khảo: {reference_url}\n"
+            if last_updated:
+                result += f"📅 Cập nhật: {last_updated}\n"
+            result += "="*60 + "\n"
+            result += "⚠️ LƯU Ý: Phần nguồn tham khảo này BẮT BUỘC phải được bao gồm trong câu trả lời cuối cùng cho người dùng."
+            print(f"✅ [MedicalTools] Đã thêm nguồn tham khảo cho {medicine_name}")
+        else:
+            print(f"⚠️ [MedicalTools] KHÔNG có thông tin nguồn cho {medicine_name}")
+        
+        return result
+    
     @tool
     def search_medicine_by_name(self, medicine_name: str) -> str:
         """
@@ -62,12 +97,19 @@ class MedicalTools:
             if not results:
                 return f"Không tìm thấy thông tin về thuốc {medicine_name}"
             
-            # Get top result
-            doc, score = results[0]
-            return doc.page_content
+            # Lấy kết quả có score cao nhất
+            best_doc, best_score = results[0]
+            found_name = best_doc.metadata.get('item_name', '')
+            
+            # Kiểm tra xem tên có match không (case-insensitive)
+            if medicine_name.lower() in found_name.lower():
+                # ✅ Sử dụng helper method để format bao gồm nguồn
+                return self._format_medicine_info(best_doc)
+            else:
+                return f"❌ Không tìm thấy thông tin chính xác về thuốc '{medicine_name}'"
             
         except Exception as e:
-            return f"Lỗi tra cứu thuốc: {str(e)}"
+            return f"⚠️ Lỗi khi tìm kiếm thuốc: {str(e)}"
     
     @tool
     def search_symptoms_info(self, symptom: str) -> str:

@@ -1,11 +1,21 @@
 import os
-import shutil
+import sys
+
+# ✅ Fix import path khi chạy trực tiếp file này
+if __name__ == "__main__":
+    # Thêm thư mục gốc vào sys.path
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    if project_root not in sys.path:
+        sys.path.insert(0, project_root)
+
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from typing import List
 from src.models.llm import get_embeddings
+import json
+import shutil
 
 load_dotenv()
 
@@ -206,4 +216,165 @@ class VectorStoreService:
         except Exception as e:
             print(f"⚠️ Lỗi search with filter and scores: {str(e)}")
             return []
+    
+    def _process_medicines_json(self, file_path: str, filename: str) -> List[Document]:
+        """Process medicines.json - Đảm bảo lưu đầy đủ metadata"""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            documents = []
+            medicines = data.get('medicines', [])
+            
+            print(f"\n🔍 Processing {len(medicines)} medicines from {filename}")
+            print("="*60)
+            
+            for medicine in medicines:
+                medicine_name = medicine.get('medicine_name', 'Unknown')
+                generic_name = medicine.get('generic_name', '')
+                category = medicine.get('category', '')
+                brand_names = ', '.join(medicine.get('brand_names', []))
+                
+                # ✅ ĐỌC ĐÚNG TỪ JSON - QUAN TRỌNG!
+                source = medicine.get('source', '')
+                reference_url = medicine.get('reference_url', '')
+                last_updated = medicine.get('last_updated', '')
+                
+                # ✅ Debug: In ra để kiểm tra
+                print(f"\n📌 {medicine_name}:")
+                print(f"   - source: '{source}' {'✅' if source else '❌ MISSING'}")
+                print(f"   - reference_url: '{reference_url}' {'✅' if reference_url else '❌ MISSING'}")
+                print(f"   - last_updated: '{last_updated}' {'✅' if last_updated else '❌ MISSING'}")
+                
+                # Indications
+                indications = medicine.get('indications', [])
+                indications_text = ', '.join(indications) if indications else ''
+                indications_str = f"Chỉ định: {indications_text}" if indications_text else ""
+                
+                # Dosage
+                dosage = medicine.get('dosage', {})
+                dosage_str = "Liều dùng:\n"
+                if dosage:
+                    for key, value in dosage.items():
+                        dosage_str += f"  - {key}: {value}\n"
+            
+                # Other fields
+                contraindications = medicine.get('contraindications', [])
+                contra_str = f"Chống chỉ định: {', '.join(contraindications)}" if contraindications else ""
+                
+                side_effects = medicine.get('side_effects', [])
+                side_str = f"Tác dụng phụ: {', '.join(side_effects)}" if side_effects else ""
+                
+                warnings = medicine.get('warnings', '')
+                warnings_str = f"Cảnh báo: {warnings}" if warnings else ""
+                
+                # Build content
+                content_parts = [
+                    f"Tên thuốc: {medicine_name}",
+                    f"Tên generic: {generic_name}" if generic_name else "",
+                    f"Tên thương mại: {brand_names}" if brand_names else "",
+                    f"Loại: {category}" if category else "",
+                    indications_str,
+                    dosage_str,
+                    contra_str,
+                    side_str,
+                    warnings_str
+                ]
+                
+                content = "\n".join([part for part in content_parts if part])
+                
+                # ✅ METADATA - LƯU Ý: source, reference_url, last_updated từ JSON
+                metadata = {
+                    'filename': filename,
+                    'item_name': medicine_name,
+                    'category': category,
+                    'indications_text': indications_text,
+                    'source': source,  # ✅ Từ JSON
+                    'reference_url': reference_url,  # ✅ Từ JSON
+                    'last_updated': last_updated  # ✅ Từ JSON
+                }
+                
+                doc = Document(
+                    page_content=content,
+                    metadata=metadata
+                )
+                documents.append(doc)
+        
+            print(f"\n{'='*60}")
+            print(f"✅ Processed {len(documents)} medicines with metadata")
+            print(f"{'='*60}\n")
+        
+            return documents
+        
+        except Exception as e:
+            print(f"⚠️ Error processing medicines.json: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return []
+
+if __name__ == "__main__":
+    """Rebuild vector store từ documents"""
+    print("\n" + "="*60)
+    print("🔄 REBUILDING VECTOR STORE")
+    print("="*60 + "\n")
+    
+    # Initialize service
+    service = VectorStoreService()
+    
+    # Load documents
+    documents_path = "./data/documents"
+    
+    if not os.path.exists(documents_path):
+        print(f"❌ Thư mục documents không tồn tại: {documents_path}")
+        sys.exit(1)
+    
+    all_documents = []
+    
+    # Process JSON files
+    for filename in os.listdir(documents_path):
+        if not filename.endswith('.json'):
+            continue
+        
+        file_path = os.path.join(documents_path, filename)
+        print(f"\n📄 Processing: {filename}")
+        
+        if filename == "medicines.json":
+            docs = service._process_medicines_json(file_path, filename)
+            all_documents.extend(docs)
+        else:
+            # Process other JSON files
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Generic JSON processing
+                content = json.dumps(data, ensure_ascii=False, indent=2)
+                doc = Document(
+                    page_content=content,
+                    metadata={
+                        'filename': filename,
+                        'file_type': 'json',
+                        'source': file_path
+                    }
+                )
+                all_documents.append(doc)
+                print(f"✅ Processed {filename}")
+            except Exception as e:
+                print(f"⚠️ Error processing {filename}: {str(e)}")
+    
+    # Create vector store
+    if all_documents:
+        print(f"\n{'='*60}")
+        print(f"📊 Tổng số documents: {len(all_documents)}")
+        print(f"{'='*60}\n")
+        
+        print("🔨 Creating vector store...")
+        service.create_vector_store(all_documents)
+        
+        vector_store_path = os.getenv('VECTOR_STORE_PATH', './data/vectorstore')
+        print(f"\n✅ Vector store created successfully at: {vector_store_path}")
+        print(f"{'='*60}\n")
+    else:
+        print("\n❌ No documents found to process")
+        sys.exit(1)
 

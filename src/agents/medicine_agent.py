@@ -16,6 +16,40 @@ class MedicineAgent:
         else:
             self.medical_tools = None
     
+    def _format_medicine_info(self, doc, score=None) -> str:
+        """Helper method để format thông tin thuốc bao gồm nguồn"""
+        medicine_name = doc.metadata.get('item_name', 'Thuốc')
+        content = doc.page_content
+        
+        # ✅ Debug: In ra metadata để kiểm tra
+        print(f"🔍 DEBUG - Metadata của {medicine_name}:")
+        print(f"  - source: {doc.metadata.get('source', 'MISSING')}")
+        print(f"  - reference_url: {doc.metadata.get('reference_url', 'MISSING')}")
+        print(f"  - last_updated: {doc.metadata.get('last_updated', 'MISSING')}")
+        
+        # Thêm thông tin nguồn nếu có
+        source = doc.metadata.get('source', '')
+        reference_url = doc.metadata.get('reference_url', '')
+        last_updated = doc.metadata.get('last_updated', '')
+        
+        result = f"{'='*60}\n{medicine_name.upper()}\n{'='*60}\n\n{content}"
+        
+        # ✅ Thêm section nguồn tham khảo với format nổi bật
+        if source or reference_url or last_updated:
+            result += f"\n\n{'='*60}\n📚 NGUỒN THAM KHẢO (BẮT BUỘC HIỂN THỊ)\n{'='*60}\n"
+            if source:
+                result += f"📖 Nguồn: {source}\n"
+            if reference_url:
+                result += f"🔗 Link tham khảo: {reference_url}\n"
+            if last_updated:
+                result += f"📅 Cập nhật: {last_updated}\n"
+            result += "="*60
+            print(f"✅ Đã thêm nguồn tham khảo cho {medicine_name}")
+        else:
+            print(f"⚠️ KHÔNG có thông tin nguồn cho {medicine_name}")
+        
+        return result
+    
     def search_medicine_by_symptoms(self, symptoms: str, conversation_context: str = "") -> Optional[str]:
         """Tìm thuốc - Với LLM validation cải tiến"""
         if not self.vector_service or not self.vector_service.vector_store:
@@ -190,7 +224,9 @@ Trả lời:"""
                         cosine = medicine_scores[medicine_name]['cosine_score']
                         print(f"  {i}. {medicine_name} (Score: {score:.3f})")
                         
-                        context_parts.append(f"{'='*60}\n{medicine_name.upper()}\n{'='*60}\n{doc.page_content}")
+                        # ✅ Sử dụng helper method để format bao gồm nguồn
+                        formatted_info = self._format_medicine_info(doc, score)
+                        context_parts.append(formatted_info)
                     
                     context = "\n\n".join(context_parts)
                     result = f"THÔNG TIN THUỐC:\n\n{context}\n\n{'='*60}\n"
@@ -218,14 +254,8 @@ Trả lời:"""
             
             if results and results[0].metadata.get('filename') == 'medicines.json':
                 doc = results[0]
-                medicine_name = doc.metadata.get('item_name', 'Thuốc')
-                
-                return f"""{'='*60}
-{medicine_name.upper()}
-{'='*60}
-
-{doc.page_content}
-"""
+                # ✅ Sử dụng helper method để format bao gồm nguồn
+                return self._format_medicine_info(doc)
             
             return None
             
