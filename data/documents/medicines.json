@@ -3,16 +3,13 @@
     {
       "medicine_name": "Paracetamol",
       "generic_name": "Acetaminophen",
-      "brand_names": ["Panadol", "Tylenol", "Efferalgan"],
-      "category": "Thuốc giảm đau - hạ sốt",
-      "indications": [
-        "Hạ sốt",
-        "Giảm đau nhẹ đến trung bình",
-        "Đau đầu",
-        "Đau răng",
-        "Đau cơ",
-        "Đau khớp"
+      "brand_names": [
+        "Panadol",
+        "Tylenol",
+        "Efferalgan"
       ],
+      "category": "Thuốc giảm đau - hạ sốt",
+      "indications": [],
       "dosage": {
         "adult": "500-1000mg mỗi lần, 4-6 giờ/lần, tối đa 4000mg/ngày",
         "children": "10-15mg/kg cân nặng mỗi lần, 4-6 giờ/lần"
@@ -21,16 +18,20 @@
         "Suy gan nặng",
         "Dị ứng với Paracetamol"
       ],
-      "side_effects": [
-        "Hiếm gặp: Phát ban da, buồn nôn",
-        "Quá liều: Tổn thương gan nghiêm trọng"
-      ],
-      "warnings": "Không uống quá liều. Tránh uống cùng rượu. Thận trọng với người bệnh gan."
+      "side_effects": [],
+      "warnings": "Không uống quá liều. Tránh uống cùng rượu. Thận trọng với người bệnh gan.",
+      "source": "WHO Model List of Essential Medicines, Drugbank",
+      "reference_url": "https://www.drugs.com/paracetamol.html",
+      "last_updated": "2024-01-15"
     },
     {
       "medicine_name": "Ibuprofen",
       "generic_name": "Ibuprofen",
-      "brand_names": ["Brufen", "Advil", "Nurofen"],
+      "brand_names": [
+        "Brufen",
+        "Advil",
+        "Nurofen"
+      ],
       "category": "Thuốc chống viêm - giảm đau",
       "indications": [
         "Giảm đau",
@@ -56,12 +57,18 @@
         "Chóng mặt",
         "Phát ban da"
       ],
-      "warnings": "Uống sau ăn. Không dùng lâu dài. Thận trọng với người loét dạ dày, bệnh thận."
+      "warnings": "Uống sau ăn. Không dùng lâu dài. Thận trọng với người loét dạ dày, bệnh thận.",
+      "source": "FDA Drug Information, National Library of Medicine",
+      "reference_url": "https://www.drugs.com/ibuprofen.html",
+      "last_updated": "2024-01-15"
     },
     {
       "medicine_name": "Omeprazole",
       "generic_name": "Omeprazole",
-      "brand_names": ["Losec", "Prilosec"],
+      "brand_names": [
+        "Losec",
+        "Prilosec"
+      ],
       "category": "Thuốc ức chế bơm proton",
       "indications": [
         "Loét dạ dày",
@@ -83,12 +90,18 @@
         "Buồn nôn",
         "Đầy bụng"
       ],
-      "warnings": "Không dùng quá 14 ngày liên tục không có chỉ định bác sĩ. Có thể che giấu triệu chứng ung thư dạ dày."
+      "warnings": "Không dùng quá 14 ngày liên tục không có chỉ định bác sĩ. Có thể che giấu triệu chứng ung thư dạ dày.",
+      "source": "FDA Drug Information, European Medicines Agency",
+      "reference_url": "https://www.drugs.com/omeprazole.html",
+      "last_updated": "2024-01-15"
     },
     {
       "medicine_name": "Cetirizine",
       "generic_name": "Cetirizine",
-      "brand_names": ["Zyrtec", "Allerfar"],
+      "brand_names": [
+        "Zyrtec",
+        "Allerfar"
+      ],
       "category": "Thuốc chống dị ứng",
       "indications": [
         "Viêm mũi dị ứng",
@@ -110,12 +123,18 @@
         "Khô miệng",
         "Mệt mỏi"
       ],
-      "warnings": "Có thể gây buồn ngủ, không lái xe sau khi uống. Tránh uống cùng rượu."
+      "warnings": "Có thể gây buồn ngủ, không lái xe sau khi uống. Tránh uống cùng rượu.",
+      "source": "National Library of Medicine, Drugbank",
+      "reference_url": "https://www.drugs.com/cetirizine.html",
+      "last_updated": "2024-01-15"
     },
     {
       "medicine_name": "Loperamide",
       "generic_name": "Loperamide",
-      "brand_names": ["Imodium", "Loperal"],
+      "brand_names": [
+        "Imodium",
+        "Loperal"
+      ],
       "category": "Thuốc chống tiêu chảy",
       "indications": [
         "Tiêu chảy cấp",
@@ -136,7 +155,187 @@
         "Buồn nôn",
         "Đau bụng"
       ],
-      "warnings": "Chỉ dùng tạm thời. Nếu tiêu chảy kèm sốt cao hoặc phân có máu, cần gặp bác sĩ ngay."
+      "warnings": "Chỉ dùng tạm thời. Nếu tiêu chảy kèm sốt cao hoặc phân có máu, cần gặp bác sĩ ngay.",
+      "source": "WHO Essential Medicines, FDA Drug Information",
+      "reference_url": "https://www.drugs.com/loperamide.html",
+      "last_updated": "2024-01-15"
+    },
+    {
+      "medicine_name": "Amoxicillin",
+      "generic_name": "Amoxicillin",
+      "brand_names": [],
+      "category": "Thuốc kháng sinh",
+      "indications": [
+        "Điều trị nhiễm khuẩn do vi khuẩn nhạy cảm, bao gồm nhiễm khuẩn đường hô hấp, nhiễm khuẩn tai mũi họng, nhiễm khuẩn da và mô mềm."
+      ],
+      "dosage": {
+        "adult": "250-500mg mỗi 8 giờ hoặc 500-875mg mỗi 12 giờ, tùy thuộc vào mức độ nhiễm khuẩn.",
+        "children": "20-40mg/kg/ngày chia thành 2-3 liều, tối đa 1g/ngày."
+      },
+      "contraindications": [
+        "Dị ứng với amoxicillin hoặc bất kỳ kháng sinh penicillin nào khác.",
+        "Tiền sử phản ứng dị ứng nghiêm trọng với penicillin."
+      ],
+      "side_effects": [
+        "Các tác dụng phụ thường gặp của amoxicillin có thể bao gồm buồn nôn, nôn, tiêu chảy hoặc phát ban.",
+        "Các tác dụng phụ này ảnh hưởng đến hơn 1% bệnh nhân trong các thử nghiệm lâm sàng."
+      ],
+      "warnings": "Không sử dụng thuốc này nếu bạn bị dị ứng với amoxicillin hoặc bất kỳ kháng sinh penicillin nào khác, chẳng hạn như ampicillin, dicloxacillin, oxacillin, penicillin và các loại khác.",
+      "source": "Drugs.com",
+      "reference_url": "https://www.drugs.com/amoxicillin.html",
+      "last_updated": "2025-11-08"
+    },
+    {
+      "medicine_name": "Oresol (ORS)",
+      "generic_name": "Dung dịch điện giải",
+      "brand_names": [],
+      "category": "Thuốc điều trị mất nước",
+      "indications": [
+        "Bù nước và điện giải cho bệnh nhân bị tiêu chảy cấp",
+        "Sử dụng trong các trường hợp mất nước do nôn mửa, sốt hoặc ra mồ hôi nhiều"
+      ],
+      "dosage": {
+        "adult": "Pha 1 gói Oresol với 1 lít nước sạch, uống từng ngụm nhỏ trong suốt cả ngày.",
+        "children": "Pha 1 gói Oresol với 200-500ml nước sạch, cho trẻ uống từng ngụm nhỏ."
+      },
+      "contraindications": [
+        "Người bệnh không thể uống nước hoặc có dấu hiệu mất nước nặng",
+        "Người bệnh có tình trạng tắc ruột"
+      ],
+      "side_effects": [
+        "Buồn nôn",
+        "Nôn",
+        "Đau bụng"
+      ],
+      "warnings": "Không thay thế hoàn toàn nước và điện giải bằng Oresol trong trường hợp mất nước nặng. Cần theo dõi tình trạng sức khỏe và có thể cần điều trị y tế bổ sung.",
+      "source": "Tổ chức Y tế Thế giới (WHO), Bộ Y tế Việt Nam",
+      "reference_url": "https://www.who.int/news-room/fact-sheets/detail/oral-rehydration-salts",
+      "last_updated": "2025-11-08"
+    },
+    {
+      "medicine_name": "Ranitidine",
+      "generic_name": "Ranitidine",
+      "brand_names": [],
+      "category": "Thuốc ức chế tiết acid dạ dày",
+      "indications": [
+        "Điều trị loét dạ dày",
+        "Điều trị trào ngược dạ dày thực quản",
+        "Điều trị hội chứng Zollinger-Ellison"
+      ],
+      "dosage": {
+        "adult": "150mg mỗi lần, 2 lần/ngày hoặc 300mg vào buổi tối; tối đa 600mg/ngày",
+        "children": "Liều lượng dựa trên cân nặng và tình trạng bệnh, tham khảo ý kiến bác sĩ"
+      },
+      "contraindications": [
+        "Dị ứng với Ranitidine",
+        "Suy thận nặng"
+      ],
+      "side_effects": [
+        "Phản ứng dị ứng nghiêm trọng: phát ban, khó thở, sưng mặt, môi, lưỡi hoặc họng",
+        "Đau đầu",
+        "Chóng mặt",
+        "Tiêu chảy hoặc táo bón"
+      ],
+      "warnings": "Ranitidine đã bị rút khỏi thị trường tại Hoa Kỳ. Một số nội dung trong tờ hướng dẫn này được bảo tồn chỉ vì mục đích lịch sử.",
+      "source": "Drugs.com",
+      "reference_url": "https://www.drugs.com/ranitidine.html",
+      "last_updated": "2025-11-08"
+    },
+    {
+      "medicine_name": "Salbutamol",
+      "generic_name": "Salbutamol",
+      "brand_names": [
+        "Ventolin",
+        "Proventil",
+        "Albuterol"
+      ],
+      "category": "Thuốc giãn phế quản",
+      "indications": [
+        "Điều trị hen suyễn",
+        "Điều trị bệnh phổi tắc nghẽn mạn tính (COPD)",
+        "Giảm triệu chứng khó thở do co thắt phế quản"
+      ],
+      "dosage": {
+        "adult": "2-4mg qua đường uống, 3-4 lần/ngày; 100-200mcg qua đường hít, 4-6 lần/ngày",
+        "children": "0.1-0.2mg/kg cân nặng, tối đa 4mg mỗi lần, 3-4 lần/ngày"
+      },
+      "contraindications": [
+        "Dị ứng với Salbutamol",
+        "Nhịp tim nhanh không kiểm soát",
+        "Bệnh tim mạch nặng"
+      ],
+      "side_effects": [
+        "Tăng nhịp tim",
+        "Run rẩy",
+        "Đau đầu",
+        "Chóng mặt",
+        "Khó ngủ"
+      ],
+      "warnings": "Cần thận trọng khi sử dụng cho bệnh nhân có tiền sử bệnh tim hoặc cao huyết áp. Không dùng quá liều chỉ định.",
+      "source": "Drugs.com",
+      "reference_url": "https://www.drugs.com/salbutamol.html",
+      "last_updated": "2025-11-08"
+    },
+    {
+      "medicine_name": "Diclofenac",
+      "generic_name": "Diclofenac",
+      "brand_names": [],
+      "category": "Thuốc chống viêm không steroid (NSAID)",
+      "indications": [
+        "Giảm đau và viêm trong các tình trạng như viêm khớp, đau cơ, đau lưng, và đau sau phẫu thuật."
+      ],
+      "dosage": {
+        "adult": "25-50mg, 2-3 lần/ngày, tối đa 150mg/ngày.",
+        "children": "Liều dùng phụ thuộc vào cân nặng và tình trạng bệnh, cần tham khảo ý kiến bác sĩ."
+      },
+      "contraindications": [
+        "Dị ứng với diclofenac hoặc các NSAID khác.",
+        "Loét dạ dày hoặc tá tràng.",
+        "Suy gan nặng.",
+        "Suy thận nặng.",
+        "Phụ nữ mang thai trong 3 tháng cuối."
+      ],
+      "side_effects": [
+        "Phản ứng dị ứng nghiêm trọng (nổi mề đay, khó thở, sưng mặt hoặc cổ họng).",
+        "Phản ứng da nghiêm trọng (sốt, đau họng, mắt đỏ, đau da, phát ban đỏ hoặc tím có mụn nước và bong tróc).",
+        "Đau dạ dày, buồn nôn, tiêu chảy.",
+        "Tăng huyết áp."
+      ],
+      "warnings": "Bạn không nên sử dụng diclofenac nếu bạn có tiền sử phản ứng dị ứng với aspirin hoặc NSAIDs.",
+      "source": "Drugs.com",
+      "reference_url": "https://www.drugs.com/diclofenac.html",
+      "last_updated": "2025-11-08"
+    },
+    {
+      "medicine_name": "Berberin",
+      "generic_name": "Berberine",
+      "brand_names": [],
+      "category": "Thuốc kháng viêm, kháng khuẩn",
+      "indications": [
+        "Hỗ trợ điều trị tiểu đường",
+        "Giảm cholesterol",
+        "Chống viêm",
+        "Chống nhiễm khuẩn"
+      ],
+      "dosage": {
+        "adult": "500mg, 2-3 lần/ngày",
+        "children": "Liều dùng cho trẻ em cần tham khảo ý kiến bác sĩ"
+      },
+      "contraindications": [
+        "Phụ nữ mang thai và cho con bú",
+        "Người có tiền sử dị ứng với Berberin",
+        "Người bị rối loạn tiêu hóa nặng"
+      ],
+      "side_effects": [
+        "Tiêu chảy",
+        "Buồn nôn",
+        "Đau bụng",
+        "Mệt mỏi"
+      ],
+      "warnings": "Không sử dụng quá liều. Tham khảo ý kiến bác sĩ trước khi sử dụng nếu có bệnh lý nền.",
+      "source": "Drugs.com",
+      "reference_url": "https://www.drugs.com/medical-answers/berberine-3569378/",
+      "last_updated": "2025-11-08"
     }
   ]
 }
