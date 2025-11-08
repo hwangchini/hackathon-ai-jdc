@@ -1,4 +1,3 @@
-from langchain.tools import tool
 from typing import Optional, List
 from src.services.vector_store import VectorStoreService
 
@@ -9,7 +8,6 @@ class MedicalTools:
     def __init__(self, vector_service: VectorStoreService):
         self.vector_service = vector_service
     
-    @tool
     def search_doctors_by_specialty(self, specialty: str) -> str:
         """
         Tìm bác sĩ theo chuyên khoa.
@@ -76,7 +74,6 @@ class MedicalTools:
         
         return result
     
-    @tool
     def search_medicine_by_name(self, medicine_name: str) -> str:
         """
         Tra cứu thông tin thuốc theo tên.
@@ -111,7 +108,6 @@ class MedicalTools:
         except Exception as e:
             return f"⚠️ Lỗi khi tìm kiếm thuốc: {str(e)}"
     
-    @tool
     def search_symptoms_info(self, symptom: str) -> str:
         """
         Tìm thông tin về triệu chứng và bệnh lý.
@@ -143,9 +139,12 @@ class MedicalTools:
             return f"Lỗi tìm triệu chứng: {str(e)}"
     
     def get_all_tools(self):
-        """Lấy tất cả tools"""
-        return [
-            self.search_doctors_by_specialty,
-            self.search_medicine_by_name,
-            self.search_symptoms_info
-        ]
+        """
+        Lấy tất cả tools - KHÔNG dùng decorator @tool cho instance methods
+        Chỉ return danh sách methods để orchestrator gọi trực tiếp
+        """
+        return {
+            'search_doctors_by_specialty': self.search_doctors_by_specialty,
+            'search_medicine_by_name': self.search_medicine_by_name,
+            'search_symptoms_info': self.search_symptoms_info
+        }
